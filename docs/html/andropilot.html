@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>andropilot package &mdash; andropilot 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="andropilot 1.0.0 documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="andropilot-package">
+<h1>andropilot package<a class="headerlink" href="#andropilot-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="andropilot.controllers.html">andropilot.controllers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="andropilot.controllers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andropilot.controllers.html#module-andropilot.controllers.monkey_controller">andropilot.controllers.monkey_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andropilot.controllers.html#module-andropilot.controllers.viewserver_controller">andropilot.controllers.viewserver_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andropilot.controllers.html#module-andropilot.controllers.viewserver_parser">andropilot.controllers.viewserver_parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="andropilot.controllers.html#module-andropilot.controllers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-andropilot.notification">
+<span id="andropilot-notification-module"></span><h2>andropilot.notification module<a class="headerlink" href="#module-andropilot.notification" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="andropilot.notification.NotificationManager">
+<em class="property">class </em><code class="descclassname">andropilot.notification.</code><code class="descname">NotificationManager</code><span class="sig-paren">(</span><em>pilot</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="andropilot.notification.NotificationManager.click_notification_by_id">
+<code class="descname">click_notification_by_id</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.click_notification_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.get_notifications_by_message">
+<code class="descname">get_notifications_by_message</code><span class="sig-paren">(</span><em>text</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.get_notifications_by_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.get_notifications_by_title">
+<code class="descname">get_notifications_by_title</code><span class="sig-paren">(</span><em>text</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.get_notifications_by_title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.open_notification_bar">
+<code class="descname">open_notification_bar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.open_notification_bar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.wait_for_notification_by_message">
+<code class="descname">wait_for_notification_by_message</code><span class="sig-paren">(</span><em>text</em>, <em>timeout=120</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.wait_for_notification_by_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.notification.NotificationManager.wait_for_notification_by_title">
+<code class="descname">wait_for_notification_by_title</code><span class="sig-paren">(</span><em>text</em>, <em>timeout=120</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.notification.NotificationManager.wait_for_notification_by_title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-andropilot.pilot">
+<span id="andropilot-pilot-module"></span><h2>andropilot.pilot module<a class="headerlink" href="#module-andropilot.pilot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="andropilot.pilot.AndroPilot">
+<em class="property">class </em><code class="descclassname">andropilot.pilot.</code><code class="descname">AndroPilot</code><span class="sig-paren">(</span><em>device_name='emulator-5554'</em>, <em>device_address='127.0.0.1'</em>, <em>view_server_port=4939</em>, <em>monkey_server_port=12345</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.adb_command">
+<code class="descname">adb_command</code><span class="sig-paren">(</span><em>cmd</em>, <em>stdin=None</em>, <em>stdout=None</em>, <em>stderr=None</em>, <em>blocking=True</em>, <em>need_result=False</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.adb_command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.click_view_by_id">
+<code class="descname">click_view_by_id</code><span class="sig-paren">(</span><em>ident</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.click_view_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.click_view_by_text">
+<code class="descname">click_view_by_text</code><span class="sig-paren">(</span><em>text</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.click_view_by_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.exist_view_by_classname">
+<code class="descname">exist_view_by_classname</code><span class="sig-paren">(</span><em>class_name</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.exist_view_by_classname" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.exist_view_by_id">
+<code class="descname">exist_view_by_id</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.exist_view_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.exist_view_by_text">
+<code class="descname">exist_view_by_text</code><span class="sig-paren">(</span><em>text</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.exist_view_by_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.get_activity_list">
+<code class="descname">get_activity_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.get_activity_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.get_focus_activity">
+<code class="descname">get_focus_activity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.get_focus_activity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.get_logcat">
+<code class="descname">get_logcat</code><span class="sig-paren">(</span><em>filename</em>, <em>remove=False</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.get_logcat" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>to get the logcat this function will in turn:</dt>
+<dd><ul class="first last simple">
+<li>store logcat dump to data/user on Android</li>
+<li>pull the resulting file into a temporary file</li>
+</ul>
+</dd>
+</dl>
+<p>this is quicker than just reading stdout
+of the adb tool</p>
+<dl class="docutils">
+<dt>args:</dt>
+<dd><dl class="first last docutils">
+<dt>remove: boolean which defines if the logcat</dt>
+<dd>should be removed from the
+device after reading it</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.get_view_by_id">
+<code class="descname">get_view_by_id</code><span class="sig-paren">(</span><em>ident</em>, <em>prefix='id'</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.get_view_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the view node with the passed id.
+Returns None if a node with such id is not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.get_view_by_text">
+<code class="descname">get_view_by_text</code><span class="sig-paren">(</span><em>text</em>, <em>partial_matching=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.get_view_by_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.install_package">
+<code class="descname">install_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.install_package" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.press_back">
+<code class="descname">press_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.press_back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.press_home">
+<code class="descname">press_home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.press_home" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.press_menu">
+<code class="descname">press_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.press_menu" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.push_file">
+<code class="descname">push_file</code><span class="sig-paren">(</span><em>src</em>, <em>dst='/sdcard/'</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.push_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.refresh">
+<code class="descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.start_activity">
+<code class="descname">start_activity</code><span class="sig-paren">(</span><em>package_name</em>, <em>activity_name</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.start_activity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.take_screenshot">
+<code class="descname">take_screenshot</code><span class="sig-paren">(</span><em>filename</em>, <em>use_screencap=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.take_screenshot" title="Permalink to this definition">¶</a></dt>
+<dd><p>on old android OS versions (&lt; 3.0)  there&#8217;s no screencap
+use_screencap can be set to false to use a fallback method
+with screenshot.jar
+[uses the same method as ddmlib, but sometimes the java process
+crashes so its better to stick to screencap as long as possible]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.tap_on_coordinates">
+<code class="descname">tap_on_coordinates</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.tap_on_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.type">
+<code class="descname">type</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.wait_for_activity">
+<code class="descname">wait_for_activity</code><span class="sig-paren">(</span><em>activity_name</em>, <em>timeout=120</em>, <em>critical=True</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.wait_for_activity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for a given activity to show up.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.wait_for_custom_event">
+<code class="descname">wait_for_custom_event</code><span class="sig-paren">(</span><em>event_checker</em>, <em>timeout=120</em>, <em>refresh=False</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.wait_for_custom_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for a custom event passed by the user.
+event_checker is a boolean function which checks
+whether the event has occurred or not.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.wait_for_dialog_to_close">
+<code class="descname">wait_for_dialog_to_close</code><span class="sig-paren">(</span><em>timeout=60</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.wait_for_dialog_to_close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for a dialog window to close.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.pilot.AndroPilot.wait_for_text">
+<code class="descname">wait_for_text</code><span class="sig-paren">(</span><em>text</em>, <em>timeout=120</em>, <em>sleep_time=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.pilot.AndroPilot.wait_for_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for a given text to appear in some view.
+Internally it keeps dumping the view hierarchy until the text
+is found or the timout is reached.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="andropilot.pilot.AndroPilotException">
+<em class="property">exception </em><code class="descclassname">andropilot.pilot.</code><code class="descname">AndroPilotException</code><a class="headerlink" href="#andropilot.pilot.AndroPilotException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-andropilot.test_parser">
+<span id="andropilot-test-parser-module"></span><h2>andropilot.test_parser module<a class="headerlink" href="#module-andropilot.test_parser" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="andropilot-tests-module">
+<h2>andropilot.tests module<a class="headerlink" href="#andropilot-tests-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-andropilot">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-andropilot" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">andropilot package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-andropilot.notification">andropilot.notification module</a></li>
+<li><a class="reference internal" href="#module-andropilot.pilot">andropilot.pilot module</a></li>
+<li><a class="reference internal" href="#module-andropilot.test_parser">andropilot.test_parser module</a></li>
+<li><a class="reference internal" href="#andropilot-tests-module">andropilot.tests module</a></li>
+<li><a class="reference internal" href="#module-andropilot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/andropilot.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, andrototal.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/andropilot.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

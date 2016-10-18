@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>andropilot.controllers package &mdash; andropilot 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="andropilot 1.0.0 documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="andropilot-controllers-package">
+<h1>andropilot.controllers package<a class="headerlink" href="#andropilot-controllers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-andropilot.controllers.monkey_controller">
+<span id="andropilot-controllers-monkey-controller-module"></span><h2>andropilot.controllers.monkey_controller module<a class="headerlink" href="#module-andropilot.controllers.monkey_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController">
+<em class="property">class </em><code class="descclassname">andropilot.controllers.monkey_controller.</code><code class="descname">MonkeyController</code><span class="sig-paren">(</span><em>pilot</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class can send events to monkey server in device</p>
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.done">
+<code class="descname">done</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.done" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.drag">
+<code class="descname">drag</code><span class="sig-paren">(</span><em>fromX</em>, <em>fromY</em>, <em>toX</em>, <em>toY</em>, <em>duration=0.5</em>, <em>steps=10</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.drag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.get_api_level">
+<code class="descname">get_api_level</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.get_api_level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.get_display_height">
+<code class="descname">get_display_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.get_display_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.get_display_width">
+<code class="descname">get_display_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.get_display_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.get_property_by_socket">
+<code class="descname">get_property_by_socket</code><span class="sig-paren">(</span><em>property_name</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.get_property_by_socket" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a property value through the already open telnet connection.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>property_name (str): the name of the property to be retrieved.</dd>
+<dt>Returns:</dt>
+<dd>the retrieved value of the property</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the MonkeyController instance by performing
+all the required operations (starting monkey service,
+forwarding port on the emulator, opening socket connection).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.press">
+<code class="descname">press</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.press" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.restart">
+<code class="descname">restart</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.restart" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.send_by_socket">
+<code class="descname">send_by_socket</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.send_by_socket" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a command through the already open socket connection.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>command (str): the string command to be sent.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.swipe_down">
+<code class="descname">swipe_down</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.swipe_down" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.swipe_left">
+<code class="descname">swipe_left</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.swipe_left" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.swipe_right">
+<code class="descname">swipe_right</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.swipe_right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.swipe_up">
+<code class="descname">swipe_up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.swipe_up" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.tap">
+<code class="descname">tap</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.tap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.type">
+<code class="descname">type</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.monkey_controller.MonkeyController.wake">
+<code class="descname">wake</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyController.wake" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="andropilot.controllers.monkey_controller.MonkeyException">
+<em class="property">exception </em><code class="descclassname">andropilot.controllers.monkey_controller.</code><code class="descname">MonkeyException</code><a class="headerlink" href="#andropilot.controllers.monkey_controller.MonkeyException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-andropilot.controllers.viewserver_controller">
+<span id="andropilot-controllers-viewserver-controller-module"></span><h2>andropilot.controllers.viewserver_controller module<a class="headerlink" href="#module-andropilot.controllers.viewserver_controller" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController">
+<em class="property">class </em><code class="descclassname">andropilot.controllers.viewserver_controller.</code><code class="descname">ViewServerController</code><span class="sig-paren">(</span><em>pilot</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.DUMP_ALL_CMD">
+<code class="descname">DUMP_ALL_CMD</code><em class="property"> = 'DUMP -1'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.DUMP_ALL_CMD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.DUMP_VIEW_CMD">
+<code class="descname">DUMP_VIEW_CMD</code><em class="property"> = 'DUMP'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.DUMP_VIEW_CMD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.GET_FOCUS_CMD">
+<code class="descname">GET_FOCUS_CMD</code><em class="property"> = 'GET_FOCUS'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.GET_FOCUS_CMD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.LIST_VIEW_CMD">
+<code class="descname">LIST_VIEW_CMD</code><em class="property"> = 'LIST'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.LIST_VIEW_CMD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.autolist_cmd">
+<code class="descname">autolist_cmd</code><em class="property"> = 'AUTOLIST'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.autolist_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.capture_cmd">
+<code class="descname">capture_cmd</code><em class="property"> = 'CAPTURE'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.capture_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.dump_view_by_hashcode">
+<code class="descname">dump_view_by_hashcode</code><span class="sig-paren">(</span><em>hashcode</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.dump_view_by_hashcode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.get_activity_list">
+<code class="descname">get_activity_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.get_activity_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.get_data_by_socket">
+<code class="descname">get_data_by_socket</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.get_data_by_socket" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.get_focus_activity">
+<code class="descname">get_focus_activity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.get_focus_activity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.invalidate_cmd">
+<code class="descname">invalidate_cmd</code><em class="property"> = 'INVALIDATE'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.invalidate_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.profile_cmd">
+<code class="descname">profile_cmd</code><em class="property"> = 'PROFILE'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.profile_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.protocol_cmd">
+<code class="descname">protocol_cmd</code><em class="property"> = 'PROTOCOL'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.protocol_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.refresh_view">
+<code class="descname">refresh_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.refresh_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerController.server_cmd">
+<code class="descname">server_cmd</code><em class="property"> = 'SERVER'</em><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerController.server_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="andropilot.controllers.viewserver_controller.ViewServerException">
+<em class="property">exception </em><code class="descclassname">andropilot.controllers.viewserver_controller.</code><code class="descname">ViewServerException</code><a class="headerlink" href="#andropilot.controllers.viewserver_controller.ViewServerException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-andropilot.controllers.viewserver_parser">
+<span id="andropilot-controllers-viewserver-parser-module"></span><h2>andropilot.controllers.viewserver_parser module<a class="headerlink" href="#module-andropilot.controllers.viewserver_parser" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="andropilot.controllers.viewserver_parser.Point">
+<em class="property">class </em><code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">Point</code><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Point" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Point.x">
+<code class="descname">x</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Point.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Point.y">
+<code class="descname">y</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Point.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="andropilot.controllers.viewserver_parser.Rect">
+<em class="property">class </em><code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">Rect</code><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Rect" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Rect.mBottom">
+<code class="descname">mBottom</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Rect.mBottom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Rect.mLeft">
+<code class="descname">mLeft</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Rect.mLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Rect.mRight">
+<code class="descname">mRight</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Rect.mRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.Rect.mTop">
+<code class="descname">mTop</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.Rect.mTop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="andropilot.controllers.viewserver_parser.VSNode">
+<em class="property">class </em><code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">VSNode</code><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.get_absolute_rect">
+<code class="descname">get_absolute_rect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.get_absolute_rect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.get_all_children">
+<code class="descname">get_all_children</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.get_all_children" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.get_center_point">
+<code class="descname">get_center_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.get_center_point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.get_children_by_id">
+<code class="descname">get_children_by_id</code><span class="sig-paren">(</span><em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.get_children_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mAbsoluteRect">
+<code class="descname">mAbsoluteRect</code><em class="property"> = &lt;andropilot.controllers.viewserver_parser.Rect instance&gt;</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mAbsoluteRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mActive">
+<code class="descname">mActive</code><em class="property"> = False</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mActive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mChildNodes">
+<code class="descname">mChildNodes</code><em class="property"> = []</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mChildNodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mClassName">
+<code class="descname">mClassName</code><em class="property"> = 'mClassName'</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mClassName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mClickable">
+<code class="descname">mClickable</code><em class="property"> = False</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mClickable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mDepth">
+<code class="descname">mDepth</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mDepth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mHashCode">
+<code class="descname">mHashCode</code><em class="property"> = 'fffff'</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mHashCode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mId">
+<code class="descname">mId</code><em class="property"> = ''</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mLocation">
+<code class="descname">mLocation</code><em class="property"> = &lt;andropilot.controllers.viewserver_parser.Point instance&gt;</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mLocation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mParentNode">
+<code class="descname">mParentNode</code><em class="property"> = {}</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mParentNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mRect">
+<code class="descname">mRect</code><em class="property"> = &lt;andropilot.controllers.viewserver_parser.Rect instance&gt;</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mScrollX">
+<code class="descname">mScrollX</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mScrollX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mScrollY">
+<code class="descname">mScrollY</code><em class="property"> = 0</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mScrollY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mText">
+<code class="descname">mText</code><em class="property"> = 'mText'</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.mVisible">
+<code class="descname">mVisible</code><em class="property"> = False</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.mVisible" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="andropilot.controllers.viewserver_parser.VSNode.rawData">
+<code class="descname">rawData</code><em class="property"> = ''</em><a class="headerlink" href="#andropilot.controllers.viewserver_parser.VSNode.rawData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.build_tree">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">build_tree</code><span class="sig-paren">(</span><em>dump_data</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.build_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.convert_bool">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">convert_bool</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.convert_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.convert_int">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">convert_int</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.convert_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.convert_text">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">convert_text</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.convert_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.convert_visibility">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">convert_visibility</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.convert_visibility" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="andropilot.controllers.viewserver_parser.get_dot_graph">
+<code class="descclassname">andropilot.controllers.viewserver_parser.</code><code class="descname">get_dot_graph</code><span class="sig-paren">(</span><em>tree_nodes_list</em><span class="sig-paren">)</span><a class="headerlink" href="#andropilot.controllers.viewserver_parser.get_dot_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-andropilot.controllers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-andropilot.controllers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">andropilot.controllers package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-andropilot.controllers.monkey_controller">andropilot.controllers.monkey_controller module</a></li>
+<li><a class="reference internal" href="#module-andropilot.controllers.viewserver_controller">andropilot.controllers.viewserver_controller module</a></li>
+<li><a class="reference internal" href="#module-andropilot.controllers.viewserver_parser">andropilot.controllers.viewserver_parser module</a></li>
+<li><a class="reference internal" href="#module-andropilot.controllers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/andropilot.controllers.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, andrototal.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/andropilot.controllers.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
